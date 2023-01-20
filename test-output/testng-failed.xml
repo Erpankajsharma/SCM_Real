@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.manufacturer.testScript.EditProductUsing_BC">
+        <methods>
+          <include name="editProduct"/>
+          <include name="configAM"/>
+          <include name="disconnectDB"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="configDB"/>
+          <include name="configBM"/>
+        </methods>
+      </class> <!-- com.manufacturer.testScript.EditProductUsing_BC -->
+      <class name="com.manufacturer.testScript.AddProductUsing_BC">
+        <methods>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="configBM"/>
+        </methods>
+      </class> <!-- com.manufacturer.testScript.AddProductUsing_BC -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" name="Suite" parallel="tests">
+  <test name="Test">
+    <classes>
+      <class name="com.manufacturer.testScript.AddProductUsing_BC">
+      
+      <methods>
+      <include name="addProduct"></include>
+      <include name="simple2"></include>
+      <exclude name="simple1"></exclude>
+      </methods>
+      
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
