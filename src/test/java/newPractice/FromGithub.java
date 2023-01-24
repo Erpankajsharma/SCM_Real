@@ -1,4 +1,8 @@
-public FromGithub
+package newPractice;
+
+import org.testng.annotations.Test;
+
+public class FromGithub
 {
 @Test
 public void fromGithub()
